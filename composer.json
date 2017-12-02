@@ -1,0 +1,38 @@
+{
+    "name": "jcsofts/laravel-linkmobility",
+    "description": "the laravel package for linkmobility",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "Linkmobility",
+        "Laravel"
+    ],
+    "authors": [
+        {
+            "name": "lee",
+            "email": "jcsoft@aliyun.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "guzzlehttp/guzzle": "~5.3|~6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jcsofts\\LaravelLinkmobility\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jcsofts\\LaravelLinkmobility\\LinkmobilityServiceProvider"
+            ],
+            "aliases": {
+                "Messente": "Jcsofts\\LaravelLinkmobility\\Facade\\Linkmobility"
+            }
+        }
+    }
+}
